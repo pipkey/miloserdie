@@ -1,0 +1,13 @@
+.contscts__links{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.links__link{
+
+}
+.links__link>a>img{
+    width: 40px;
+    height: 40px;
+}
