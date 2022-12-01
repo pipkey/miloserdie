@@ -15,3 +15,17 @@
     justify-content: center;
     gap: 15px;
 }
+
+@media (max-width: 1200px) {
+    .btns{
+        flex-direction:column ;
+    }
+}
+@media (max-width: 990px) {
+    .banner{
+        flex-direction:column ;
+    }
+    .banner__title{
+        margin-top: 40px;
+    }
+}

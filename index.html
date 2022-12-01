@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logo_m.ico" type="image/x-icon">
 <!-- fonts-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +42,7 @@
 <!-- main -->
 <section class="container">
     <div class="banner">
-        <img src="assets/main.webp" alt="">
+        <img src="assets/main.webp" class="img-fluid" alt="">
         <div class="banner__info">
             <h1 class="banner__title"> Дарить добро </h1>
             <div class="btns">
@@ -89,8 +90,8 @@
         </div>
 
         <!-- If we need navigation buttons -->
-        <img src="assets/slider/l_arrow.png" class="swiper-button-prev">
-        <img src="assets/slider/r_arrow.png" class="swiper-button-next">
+<!--        <img src="assets/slider/l_arrow.png" class="swiper-button-prev">-->
+<!--        <img src="assets/slider/r_arrow.png" class="swiper-button-next">-->
 
 
     </div>
@@ -175,10 +176,18 @@
         autoplay: true,
         slidesPerView: 2,
         spaceBetween: 10,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+        // navigation: {
+        //     nextEl: '.swiper-button-next',
+        //     prevEl: '.swiper-button-prev',
+        // },
+        breakpoints:{
+            320:{
+                slidesPerView:1
+            },
+            990:{
+                slidesPerView: 2,
+            }
+        }
     });
 </script>
 </body>

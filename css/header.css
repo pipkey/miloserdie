@@ -18,3 +18,11 @@ header {
     list-style: none;
     gap: 30px;
 }
+@media (max-width: 767px) {
+    header{
+        justify-content: center;
+    }
+    nav{
+        display: none;
+    }
+}
